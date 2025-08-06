@@ -1,15 +1,14 @@
 package com.helga.lib.sender;
 
 import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 
-@Slf4j
 @Service
 @AllArgsConstructor
 public class SenderSMS {
@@ -19,10 +18,10 @@ public class SenderSMS {
 
     private static final String API_URL_TEST = "https://textbelt.com/text";
 
-    @Value("${phone}")
-    String phoneNumber;
+    private static final Logger log = LoggerFactory.getLogger(SenderSMS.class);
 
-    public void sendSmsTest(String phoneNumber, String message) throws Exception {
+    public void sendSmsTest(String message) throws Exception {
+        String phoneNumber = "89873081860";
         var urlParameters = "phone=" + URLEncoder.encode(phoneNumber, "UTF-8")
                 + "&message=" + URLEncoder.encode(message, "UTF-8")
                 + "&key=textbelt";

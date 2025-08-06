@@ -2,4 +2,14 @@ spring:
   application:
     name: useful-features
 
-phone: 89873081860
+logging:
+  file:
+    name: logs/useful-features_log.log
+  logback:
+    rollingpolicy:
+      max-file-size: 10MB
+  level:
+    root: info
+
+
+

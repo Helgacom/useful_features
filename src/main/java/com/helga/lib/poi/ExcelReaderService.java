@@ -3,15 +3,19 @@ package com.helga.lib.poi;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-@Slf4j
+//@Slf4j
 @Service
 public class ExcelReaderService {
+
+    private static final Logger log = LoggerFactory.getLogger(ExcelReaderService.class);
 
     /*
     HSSFWorkbook - .xls. XSSFWorkbook и SXSSFWorkbook -.xlsx
