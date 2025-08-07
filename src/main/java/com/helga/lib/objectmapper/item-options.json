@@ -1,0 +1,34 @@
+{
+  "engines": [
+    {
+      "name": "coqui",
+      "voices": [
+        "alena",
+        "boris",
+        "nadya"
+      ],
+      "sampleRates": [
+        "24000"
+      ],
+      "maxLength": 182
+    },
+    {
+      "name": "silero",
+      "voices": [
+        "aidar",
+        "baya",
+        "ksenia",
+        "xenia",
+        "eugene"
+      ],
+      "sampleRates": [
+        "48000",
+        "24000",
+        "8000"
+      ],
+      "maxLength": 360
+    }
+  ]
+}
+
+
