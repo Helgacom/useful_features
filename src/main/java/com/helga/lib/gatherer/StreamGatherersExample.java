@@ -1,4 +1,4 @@
-package com.helga.lib.java24.gatherer;
+package com.helga.lib.gatherer;
 
 import java.util.List;
 import java.util.stream.Gatherer;
